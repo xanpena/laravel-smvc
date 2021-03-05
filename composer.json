@@ -1,0 +1,55 @@
+{
+    "name": "xanpena/laravel-smvc",
+    "description": "SMVC Pattern CRUD Generator Library",
+    "keywords": [
+        "smvc",
+        "laravel",
+        "schema",
+        "generator",
+        "crud"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Xan Pena",
+            "email": "xanpena@outlook.es"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.2",
+        "illuminate/support": "^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xanpena\\SMVC\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Xanpena\\SMVC\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Xanpena\\SMVC\\SMVCServiceProvider"
+            ],
+            "aliases": {
+                "SMVC": "Xanpena\\SMVC\\SMVCFacade"
+            }
+        }
+    }
+}
