@@ -72,12 +72,12 @@ interface SMVCSchemaInterface
     public function dataEdit() : array;
 
     /**
-     * Get parent PlxSchema name value.
+     * Get parent Schema name value.
      */
     public function parent() : string;
 
     /**
-     * Get parent PlxSchema PK field name.
+     * Get parent Schema PK field name.
      */
     public function parentFK() : string;
 
@@ -112,7 +112,7 @@ interface SMVCSchemaInterface
     public function fields() : array;
 
     /**
-     * Get the full PlxSchema definition.
+     * Get the full Schema definition.
      */
     public function full() : array;
 }

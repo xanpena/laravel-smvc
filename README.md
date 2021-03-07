@@ -1,8 +1,8 @@
 # Laravel SMVC
 
-This library offers the *SMVC architecture pattern* by adding a data structure layer called *Schema* to the MVC pattern.
+This library offers the **SMVC architecture pattern** by adding a data structure layer called **Schema** to the MVC pattern.
 
-Allows *automatic generation of CRUDS* sections without the need to create additional views or controllers.
+Allows **automatic generation of CRUDS** sections without the need to create additional views or controllers.
 
 ### Features
 
@@ -18,6 +18,7 @@ After installing SMVC, publish its assets using the smvc:install Artisan command
 
 ```shell
     php artisan smvc:install
+    php artisan smvc:publish
 ```
 
 ### For Laravel
@@ -32,7 +33,7 @@ Below **Laravel 6** open `config/app` and add this line in `providers` section
 
 ### Create a SMVC Schema
 
-You have four options to *create a new Schema*. 
+You have four options to **create a new Schema**. 
 This commands publish the new file in your \Src\Schemas folder.
 
 ```bash

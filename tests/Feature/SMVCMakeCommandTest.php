@@ -25,24 +25,6 @@ final class SMVCMakeCommandTest extends TestCase {
 
         // Assert a new file is created
         $this->assertTrue(File::exists($smvcClass));
-
-        // Assert the file contains the right contents
-        $expectedContents = <<<CLASS
-<?php
-
-namespace App\Foo;
-
-use JohnDoe\BlogPackage\Foo;
-
-class DummySchema implements Foo
-{
-    public function myFoo()
-    {
-        // foo
     }
-}
-CLASS;
 
-        $this->assertEquals($expectedContents, file_get_contents($smvcClass));
-    }
 }

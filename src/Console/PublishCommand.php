@@ -32,7 +32,7 @@ class PublishCommand extends Command
             '--force' => $this->option('force'),
         ]);
 
-        $this->call('vendor:publish', [
+        /*$this->call('vendor:publish', [
             '--tag' => 'smvc-controller',
             '--force' => $this->option('force'),
         ]);
@@ -45,6 +45,6 @@ class PublishCommand extends Command
         $this->call('vendor:publish', [
             '--tag' => 'smvc-stubs',
             '--force' => $this->option('force'),
-        ]);
+        ]);*/
     }
 }

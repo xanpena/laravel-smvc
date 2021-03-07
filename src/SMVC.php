@@ -32,7 +32,7 @@ class SMVC {
     }
 
     /**
-     * Get object instance of specified PlxSchema.
+     * Get object instance of specified Schema.
      */
     public static function get(string $name) : object {
 
