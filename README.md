@@ -29,7 +29,7 @@ Below **Laravel 6** open `config/app` and add this line in `providers` section
     Xanpena\SMVC\SMVCServiceProvider::class,
 ```
 
-**Dont forget!**. You must to define the autoload to Src folder.
+**Dont forget!**. You must to define the autoload to Src folder in your *composer.json* file.
 
 ```json
 "autoload": {
