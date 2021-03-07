@@ -14,6 +14,12 @@ Go to terminal and run this command
     composer require xanpena/laravel-smvc
 ```
 
+After installing SMVC, publish its assets using the smvc:install Artisan command. 
+
+```shell
+    php artisan smvc:install
+```
+
 ### For Laravel
 
 Below **Laravel 6** open `config/app` and add this line in `providers` section
@@ -24,8 +30,26 @@ Below **Laravel 6** open `config/app` and add this line in `providers` section
 
 ## Quick Usages
 
+### Create a SMVC Schema
 
-### Changelog
+You have four options to *create a new Schema*. 
+This commands publish the new file in your \Src\Schemas folder.
+
+```bash
+    php artisan make:smvc DummySchema --crud
+    php artisan make:smvc DummySchema --progressive
+    php artisan make:smvc DummySchema --report
+    php artisan make:smvc DummySchema --chart
+```
+
+You can check updates with:
+
+```bash
+    php artisan list
+    php artisan make:smvc --help
+```
+
+## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
 

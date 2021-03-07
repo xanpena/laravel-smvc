@@ -1,0 +1,32 @@
+<?php
+
+namespace Src\Schemas\CRUD;
+
+use Xanpena\SMVC\Schemas\CRUDSchema;
+
+final class DummyClass extends CRUDSchema
+{
+
+    /*
+    |--------------------------------------------------------------------------
+    | DummyClass
+    |--------------------------------------------------------------------------
+    |
+    | This is the main configuration file the DummyClass section.
+    |
+    */
+
+    public function __construct() {
+        $this->icon = 'fas fa-file';
+        $this->name = 'dummy-class';
+        $this->model = 'DummyClass';
+
+        $this->breadcrumbs = 'administration';
+        $this->data = [];
+        $this->tabViews = [];
+        $this->url = '';
+
+        $this->fields = [];
+    }
+
+}
