@@ -45,6 +45,8 @@ abstract class SMVCSchema implements SMVCSchemaInterface {
     const VMODEL    = 'v-model';
     const VUE       = 'VUE';
 
+    public $breadcrumbs = '';    
+    public $url = '';
     public $icon = '';
     public $name = '';
     public $table = '';
@@ -72,6 +74,14 @@ abstract class SMVCSchema implements SMVCSchemaInterface {
     public $activeRecords = false;
 
     public $fields = [];
+
+    public function breadcrumbs() : string {
+        return $this->breadcrumbs;
+    }
+
+    public function url() : string {
+        return $this->url;
+    }
 
     public function title() : string {
         return __('titles.'.$this->name);

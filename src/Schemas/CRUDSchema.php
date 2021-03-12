@@ -21,10 +21,8 @@ abstract class CRUDSchema extends SMVCSchema implements CRUDSchemaInterface {
     |
     */
 
-    public $breadcrumbs = '';
     public $tabViews = [];
     public $bottomViews = [];
-    public $url = '';
     public $filemanager = false;
     public $singleExports = false;
     public $buttons = [];
@@ -38,9 +36,6 @@ abstract class CRUDSchema extends SMVCSchema implements CRUDSchemaInterface {
     public $annulledRecords = false;
     public $auxSchema = '';
 
-    public function breadcrumbs() : string {
-        return $this->breadcrumbs;
-    }
 
     public function tabViews() : array {
         return $this->tabViews;
@@ -50,9 +45,6 @@ abstract class CRUDSchema extends SMVCSchema implements CRUDSchemaInterface {
         return $this->bottomViews;
     }
 
-    public function url() : string {
-        return $this->url;
-    }
 
     public function filemanager() : bool {
         return $this->filemanager;

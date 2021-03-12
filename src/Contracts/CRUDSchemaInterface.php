@@ -8,12 +8,6 @@ interface CRUDSchemaInterface extends SMVCSchemaInterface
 {
 
     /**
-     * Get the breadcrumbs value.
-     * It's defined as a crumb path of the WEBMAP constant separated by points.
-     */
-    public function breadcrumbs() : string;
-
-    /**
      * Get values to Kernel::view.
      * Used to generate relateds tabs in a show view.
      */
@@ -24,11 +18,6 @@ interface CRUDSchemaInterface extends SMVCSchemaInterface
      * Used to generate relateds bottom views in a show view.
      */
     public function bottomViews() : array;
-
-    /**
-     * Get the url string value for routing operations.
-     */
-    public function url() : string;
 
     /**
      * Get filemanager boolean activation.
