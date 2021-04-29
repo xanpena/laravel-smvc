@@ -25,11 +25,11 @@ class MakeCommand extends GeneratorCommand
         if ($this->option('crud')) {
             return __DIR__ . '/stubs/schema.crud.stub';
         }else if ($this->option('progressive')) {
-            return __DIR__ . '/stubs/progressive.crud.stub';
+            return __DIR__ . '/stubs/schema.progressive.stub';
         }else if ($this->option('report')) {
-            return __DIR__ . '/stubs/report.crud.stub';
+            return __DIR__ . '/stubs/schema.report.stub';
         }else if ($this->option('chart')) {
-            return __DIR__ . '/stubs/chart.crud.stub';
+            return __DIR__ . '/stubs/schema.chart.stub';
         }
         return __DIR__.$stub;
     }
@@ -45,7 +45,7 @@ class MakeCommand extends GeneratorCommand
      * Get the default namespace for the class.
      */
     protected function getDefaultNamespace($rootNamespace) {
-       
+
         $destination = 'Src\Schemas';
         if ($this->option('crud')) {
             $destination .= '\CRUD';
@@ -56,7 +56,7 @@ class MakeCommand extends GeneratorCommand
         }else if ($this->option('chart')) {
             $destination .= '\Chart';
         }
-   
+
         return $destination;
     }
 
