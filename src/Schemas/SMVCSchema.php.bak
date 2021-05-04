@@ -57,7 +57,7 @@ abstract class SMVCSchema implements SMVCSchemaInterface {
     public $leftJoins = [];
     public $wheres = [];
     public $groupBy = '';
-    public $orderBy = '';
+	public $orderBy = '';
     public $data = [];
     public $dataEdit = [];
     public $parent = '';
