@@ -102,7 +102,6 @@ abstract class CRUDSchema extends SMVCSchema implements CRUDSchemaInterface {
             'BREADCRUMBS'       => $this->breadcrumbs(),
             'JOINS'             => $this->joins(),
             'LEFT_JOINS'        => $this->leftJoins(),
-            'ORDER_BY'          => $this->orderBy(),
             'TAB_VIEWS'         => $this->tabViews(),
             'FIELDS_ATTR'       => $this->fields(),
             'URL'               => $this->url(),
