@@ -76,3 +76,7 @@ If you discover any security related issues, please using the issue tracker.
 
 - [Xan Pena](https://github.com/xanpena)
 
+## Contributors 
+
+- [Benjamín García](https://github.com/behamin)
+
