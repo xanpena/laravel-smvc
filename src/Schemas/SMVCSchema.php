@@ -24,7 +24,10 @@ abstract class SMVCSchema implements SMVCSchemaInterface {
     const DATA      = 'DATA';
     const DEFAULT   = 'DEFAULT';
     const DISABLED  = 'DISABLED';
+    const EXPORT    = 'EXPORT';
     const FILTER    = 'FILTER';
+    const IMPORT    = 'IMPORT';
+    const INIT      = 'INIT';
     const LABEL     = 'LABEL';
     const LEGEND    = 'LEGEND';
     const LINK      = 'LINK';
@@ -44,8 +47,9 @@ abstract class SMVCSchema implements SMVCSchemaInterface {
     const VMINIT    = 'MULTI_INIT';
     const VMODEL    = 'v-model';
     const VUE       = 'VUE';
+    const WIRE      = 'WIRE';
 
-    public $breadcrumbs = '';    
+    public $breadcrumbs = '';
     public $url = '';
     public $icon = '';
     public $name = '';

@@ -21,20 +21,22 @@ abstract class CRUDSchema extends SMVCSchema implements CRUDSchemaInterface {
     |
     */
 
-    public $tabViews = [];
-    public $bottomViews = [];
-    public $filemanager = false;
+    public $tabViews      = [];
+    public $bottomViews   = [];
+    public $filemanager   = false;
     public $singleExports = false;
-    public $buttons = [];
-    public $formButtons = true;
-    public $newButton = true;
-    public $parent = 'self';
-    public $portrait = 'single';
+    public $buttons       = [];
+    public $formButtons   = true;
+    public $newButton     = true;
+    public $editButton    = true;
+    public $deleteButton  = true;
+    public $parent        = 'self';
+    public $portrait      = 'single';
 
-    public $views = [];
-    public $activeRecords = false;
+    public $views           = [];
+    public $activeRecords   = false;
     public $annulledRecords = false;
-    public $auxSchema = '';
+    public $auxSchema       = '';
 
 
     public function tabViews() : array {
@@ -56,6 +58,14 @@ abstract class CRUDSchema extends SMVCSchema implements CRUDSchemaInterface {
 
     public function buttons() : array {
         return $this->buttons;
+    }
+
+    public function deleteButton() : bool {
+        return $this->deleteButton;
+    }
+
+    public function editButton() : bool {
+        return $this->editButton;
     }
 
     public function formButtons() : bool {
