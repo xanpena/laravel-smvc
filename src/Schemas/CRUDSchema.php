@@ -120,6 +120,8 @@ abstract class CRUDSchema extends SMVCSchema implements CRUDSchemaInterface {
             'SINGLE_EXPORTS'    => $this->singleExports(),
             'BUTTONS'           => $this->buttons(),
             'NEW_BUTTON'        => $this->newButton(),
+            'EDIT_BUTTON'       => $this->editButton(),
+            'DELETE_BUTTON'     => $this->deleteButton(),
             'FORM_BUTTONS'      => $this->formButtons(),
             'PARENT'            => $this->parent(),
             'PORTRAIT'          => $this->portrait(),

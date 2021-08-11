@@ -80,7 +80,7 @@ abstract class SMVCSchema implements SMVCSchemaInterface {
 
     public $fields = [];
 
-    public function breadcrumbs() : string {
+    public function breadcrumbs() : string|array {
         return $this->breadcrumbs;
     }
 

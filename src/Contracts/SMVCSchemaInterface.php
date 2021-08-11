@@ -9,7 +9,7 @@ interface SMVCSchemaInterface
      * Get the breadcrumbs value.
      * It's defined as a crumb path of the WEBMAP constant separated by points.
      */
-    public function breadcrumbs() : string;
+    public function breadcrumbs() : string|array;
 
     /**
      * Get the translable title value.
