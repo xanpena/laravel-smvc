@@ -41,9 +41,7 @@ class SMVC {
                 $schema = '\Src\Schemas\\'.$type.'\\'.self::getSchemas()[$type][$name];
                 return (new $schema);
             }
-
-            throw new \Exception("No se ha encontrado el schema con nombre $name en el archivo config/schemas.php.También puede ser que hayas definido mal la propiedad name en el propio schema. Si estás en la vista de show en este momento, puede ser que hayas definido mal el nombre de un tabView o un bottomView. Por último si el problema persiste, es posible que tengas una etiqueta de traducción mal escrita en /resources/lang y que no esté encontrando coincidencia con el nombre del schema.");
-
         }
+        throw new \Exception("No se ha encontrado el schema con nombre $name en el archivo config/schemas.php.También puede ser que hayas definido mal la propiedad name en el propio schema. Si estás en la vista de show en este momento, puede ser que hayas definido mal el nombre de un tabView o un bottomView. Por último si el problema persiste, es posible que tengas una etiqueta de traducción mal escrita en /resources/lang y que no esté encontrando coincidencia con el nombre del schema.");
     }
 }
