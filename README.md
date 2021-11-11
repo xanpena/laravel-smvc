@@ -79,4 +79,5 @@ If you discover any security related issues, please using the issue tracker.
 ## Contributors 
 
 - [Benjamín García](https://github.com/behamin)
+- [Joaquín Miras](https://github.com/Joaquinmf1999)
 
