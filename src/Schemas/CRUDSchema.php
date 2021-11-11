@@ -21,6 +21,7 @@ abstract class CRUDSchema extends SMVCSchema implements CRUDSchemaInterface {
     |
     */
 
+    public $exportRelated   = [];
     public $tabViews      = [];
     public $bottomViews   = [];
     public $filemanager   = false;
@@ -38,6 +39,10 @@ abstract class CRUDSchema extends SMVCSchema implements CRUDSchemaInterface {
     public $annulledRecords = false;
     public $auxSchema       = '';
 
+
+    public function exportRelated() : array {
+        return $this->exportRelated;
+    }
 
     public function tabViews() : array {
         return $this->tabViews;
@@ -99,6 +104,7 @@ abstract class CRUDSchema extends SMVCSchema implements CRUDSchemaInterface {
     public function full() : array {
 
         return [
+            'EXPORT_RELATED'    => $this->exportRelated(),
             'ACTIVE_RECORDS'    => $this->activeRecords(),
             'ANNULED_RECORDS'   => $this->annulledRecords(),
             'H1'                => $this->title(),
