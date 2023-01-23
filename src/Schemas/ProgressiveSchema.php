@@ -38,6 +38,10 @@ abstract class ProgressiveSchema extends SMVCSchema {
             'PARENT_FK'         => $this->parentFK(),
             'MASTER_FK'         => $this->masterFK(),
             'DATA_TABLE'        => $this->dataTable(),
+            'BUTTONS'           => $this->buttons(),
+            'NEW_BUTTON'        => $this->newButton(),
+            'EDIT_BUTTON'       => $this->editButton(),
+            'DELETE_BUTTON'     => $this->deleteButton()
         ];
 
     }

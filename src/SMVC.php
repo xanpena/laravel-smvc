@@ -36,12 +36,23 @@ class SMVC {
      */
     public static function get(string $name) : object {
 
-        foreach(self::types() as $type) {
-            if(array_key_exists($name, self::getSchemas()[$type])) {
-                $schema = '\Src\Schemas\\'.$type.'\\'.self::getSchemas()[$type][$name];
-                return (new $schema);
+        if (array_key_exists($name, self::getSchemas()['CRUD'])) {
+            $schema = '\Src\Schemas\CRUD\\'.self::getSchemas()['CRUD'][$name];
+            return (new $schema);
+        }
+
+        foreach (self::types() as $index => $type) {
+            if ($type != 'CRUD') {
+                foreach (self::getSchemas()[$type] as $parent_module => $schemas) {
+                    if (array_key_exists($name, self::getSchemas()[$type][$parent_module])) {
+                        $schema = '\Src\Schemas\\'.$type.'\\'.self::getSchemas()[$type][$parent_module][$name];
+                        return (new $schema);
+                    }
+                }
+
             }
         }
+
         throw new \Exception("No se ha encontrado el schema con nombre $name en el archivo config/schemas.php.También puede ser que hayas definido mal la propiedad name en el propio schema. Si estás en la vista de show en este momento, puede ser que hayas definido mal el nombre de un tabView o un bottomView. Por último si el problema persiste, es posible que tengas una etiqueta de traducción mal escrita en /resources/lang y que no esté encontrando coincidencia con el nombre del schema.");
     }
 }
