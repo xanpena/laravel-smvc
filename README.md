@@ -80,4 +80,5 @@ If you discover any security related issues, please using the issue tracker.
 
 - [Benjamín García](https://github.com/behamin)
 - [Joaquín Miras](https://github.com/Joaquinmf1999)
+- [Francisco Prieto](https://github.com/fjpj2310)
 
