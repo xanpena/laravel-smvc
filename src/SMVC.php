@@ -40,6 +40,11 @@ class SMVC {
             $schema = '\Src\Schemas\CRUD\\'.self::getSchemas()['CRUD'][$name];
             return (new $schema);
         }
+        
+        if (array_key_exists($name, self::getSchemas()['Progressive'])) {
+            $schema = '\Src\Schemas\Progressive\\'.self::getSchemas()['Progressive'][$name];
+            return (new $schema);
+        }
 
         foreach (self::types() as $index => $type) {
             if ($type != 'CRUD') {
