@@ -50,6 +50,7 @@ abstract class SMVCSchema implements SMVCSchemaInterface {
     const WIRE      = 'WIRE';
 
     public $breadcrumbs = '';
+    public $buttons       = [];
     public $url = '';
     public $icon = '';
     public $name = '';
