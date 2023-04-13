@@ -83,6 +83,10 @@ abstract class SMVCSchema implements SMVCSchemaInterface {
     public function breadcrumbs() : string|array {
         return $this->breadcrumbs;
     }
+    
+    public function buttons() : array {
+        return $this->buttons;
+    }
 
     public function url() : string {
         return $this->url;
