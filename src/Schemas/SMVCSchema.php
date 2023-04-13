@@ -51,6 +51,9 @@ abstract class SMVCSchema implements SMVCSchemaInterface {
 
     public $breadcrumbs = '';
     public $buttons       = [];
+    public $newButton     = true;
+    public $editButton    = true;
+    public $deleteButton  = true;
     public $url = '';
     public $icon = '';
     public $name = '';
@@ -87,6 +90,18 @@ abstract class SMVCSchema implements SMVCSchemaInterface {
     
     public function buttons() : array {
         return $this->buttons;
+    }
+    
+    public function newButton() : bool {
+        return $this->newButton;
+    }
+    
+    public function deleteButton() : bool {
+        return $this->deleteButton;
+    }
+
+    public function editButton() : bool {
+        return $this->editButton;
     }
 
     public function url() : string {
